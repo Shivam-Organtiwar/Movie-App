@@ -1,0 +1,20 @@
+/* Setting the background color for the whole page */
+body{
+  background-color:lightyellow;
+}
+
+body #page-main .wrapper .wrapper-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #page-main .wrapper .wrapper-header .details-container {
+  padding: 2em 2em;
+}
+
+body #page-main .wrapper .wrapper-header .details-container h1 {
+  text-align: center;
+  font-size: 50px;
+  color: darkslateblue;
+}

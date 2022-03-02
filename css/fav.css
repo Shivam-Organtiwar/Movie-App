@@ -1,0 +1,96 @@
+body{
+  background-color: lemonchiffon;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .home a {
+  padding: 6px 6px;
+  color:purple;
+  font-size: 20px;
+  border: 2px solid lightskyblue;
+}
+
+body main .favourites-container #my-favourites-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .favourites-container #my-favourites-list li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 30em;
+  margin: 1em;
+  padding: 1em;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+body main .favourites-container #my-favourites-list li img {
+  height: 60vh;
+}
+
+body main .favourites-container #my-favourites-list li .details-container h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-left: 10px;
+  color: rgb(232, 100, 237);
+}
+
+body main .favourites-container #my-favourites-list li .details-container .details-parent .details-child > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+body main .favourites-container #my-favourites-list li .details-container .details-parent .button-group button {
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1rem;
+  background: transparent;
+  -webkit-box-shadow: inset 1px 1px 4px 2px rgb(0, 0, 0);
+          box-shadow: inset 1px 1px 4px 2px rgb(0, 0, 0);
+  cursor: pointer;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+body main .favourites-container #my-favourites-list li .details-container .details-parent .button-group button:hover {
+  -webkit-box-shadow: 1px 1px 4px 2px rgb(0, 0, 0);
+          box-shadow: 1px 1px 4px 2px rgb(0, 0, 0);
+  background: deepskyblue;
+}
+
+body main .favourites-container #my-favourites-list li .details-container .details-parent .button-group .favourite {
+  background: darkgreen;
+  -webkit-box-shadow: inset 1px 1px 4px 2px darkgreen;
+          box-shadow: inset 1px 1px 4px 2px darkgreen;
+}
+
+body main #my-favourites-list > li:hover {
+  background: lightsteelblue;
+  border-radius: 0.5em;
+}
